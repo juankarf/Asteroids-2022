@@ -27,5 +27,6 @@ public class UIManager : MonoBehaviour
             gameOver.SetActive(true);
 
         }
+        
     }
 }

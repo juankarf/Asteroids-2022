@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     {
         collider.enabled = false;
         sprite.enabled = false; 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         collider.enabled = true;
         sprite.enabled = true;
 
