@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameObject temp = Instantiate(particulasmuerte, transform.position, transform.rotation);
         Destroy(temp, 2.5f);
-
+        GameManager.instance.vidas -= 1;
         if (GameManager.instance.vidas <= 0)
         {
             Destroy(gameObject);
@@ -71,7 +71,6 @@ public class PlayerMovement : MonoBehaviour
         collider.enabled = true;
         sprite.enabled = true;
 
-        GameManager.instance.vidas -= 1;
         transform.position = new Vector3(0, 0, 0);
         rb.velocity = new Vector2(0, 0);
 
