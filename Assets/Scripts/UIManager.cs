@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI puntuacion;
     public TextMeshProUGUI vidas;
     public GameObject gameOver;
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         tiempo.text = Time.time.ToString("00.00");
         puntuacion.text= GameManager.instance.puntuacion.ToString("00000");
         vidas.text = GameManager.instance.vidas.ToString("0");

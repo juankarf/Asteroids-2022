@@ -19,7 +19,7 @@ public class AsteroidManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (asteroides <=0)
+        if (asteroides <=2)
         {
             asteroides_min += 2;
             asteroides_max += 2;
